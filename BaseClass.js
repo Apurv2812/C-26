@@ -13,8 +13,9 @@ class BaseClass{
       }
       display(){
         var angle = this.body.angle;
+        var pos = this.body.position;
         push();
-        translate(this.body.position.x, this.body.position.y);
+        translate(pos.x,pos.y);
         rotate(angle);
         imageMode(CENTER);
         image(this.image, 0, 0, this.width, this.height);
